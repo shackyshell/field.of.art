@@ -4,13 +4,16 @@ import { Mail, MapPin, Clock } from "lucide-react";
 const Contact = () => {
   return (
     <main className="min-h-screen bg-background">
-      <section className="relative bg-gradient-to-br from-ruby/10 via-background to-sapphire/10 py-16 md:py-24">
-        <div className="container mx-auto px-4">
+      <section className="relative py-16 md:py-24 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-10 left-20 w-48 h-48 bg-yellow blob-shape-1"></div>
+        </div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center space-y-6">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-foreground">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-black">
               Contact Us
             </h1>
-            <p className="text-xl md:text-2xl text-ruby font-medium">
+            <p className="text-xl md:text-2xl text-yellow font-medium font-body">
               Get in touch to book your tour or ask any questions
             </p>
           </div>
@@ -33,14 +36,14 @@ const Contact = () => {
 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-ruby/10 p-3 rounded-lg">
-                      <Mail className="w-6 h-6 text-ruby" />
+                    <div className="bg-yellow p-3 rounded-lg">
+                      <Mail className="w-6 h-6 text-black" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Email</h3>
+                      <h3 className="font-semibold text-foreground mb-1 font-body">Email</h3>
                       <a 
                         href={`mailto:${CONTACT_EMAIL}`}
-                        className="text-ruby hover:text-ruby/80 transition-colors"
+                        className="text-black hover:text-blue transition-colors font-body"
                       >
                         {CONTACT_EMAIL}
                       </a>
@@ -48,24 +51,24 @@ const Contact = () => {
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-emerald/10 p-3 rounded-lg">
-                      <MapPin className="w-6 h-6 text-emerald" />
+                    <div className="bg-green/20 p-3 rounded-lg">
+                      <MapPin className="w-6 h-6 text-green" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Location</h3>
-                      <p className="text-muted-foreground">
+                      <h3 className="font-semibold text-foreground mb-1 font-body">Location</h3>
+                      <p className="text-muted-foreground font-body">
                         Wrocław, Poland
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-4">
-                    <div className="bg-sapphire/10 p-3 rounded-lg">
-                      <Clock className="w-6 h-6 text-sapphire" />
+                    <div className="bg-blue/20 p-3 rounded-lg">
+                      <Clock className="w-6 h-6 text-blue" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground mb-1">Response Time</h3>
-                      <p className="text-muted-foreground">
+                      <h3 className="font-semibold text-foreground mb-1 font-body">Response Time</h3>
+                      <p className="text-muted-foreground font-body">
                         We typically respond within 24 hours
                       </p>
                     </div>
@@ -73,50 +76,50 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="bg-card p-8 rounded-xl shadow-card border border-border/50">
+              <div className="bg-card p-8 rounded-card shadow-card border border-border">
                 <h3 className="text-2xl font-display font-bold text-foreground mb-6">
                   Send us a Message
                 </h3>
                 <form className="space-y-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2 font-body">
                       Name
                     </label>
                     <input
                       type="text"
                       id="name"
                       name="name"
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ruby focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-input border-2 border-border focus:outline-none focus:ring-2 focus:ring-navy focus:ring-yellow/50 focus:border-navy font-body"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2 font-body">
                       Email
                     </label>
                     <input
                       type="email"
                       id="email"
                       name="email"
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ruby focus:border-transparent"
+                      className="w-full px-4 py-3 rounded-input border-2 border-border focus:outline-none focus:ring-2 focus:ring-navy focus:ring-yellow/50 focus:border-navy font-body"
                       required
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2 font-body">
                       Message
                     </label>
                     <textarea
                       id="message"
                       name="message"
                       rows={6}
-                      className="w-full px-4 py-3 rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ruby focus:border-transparent resize-none"
+                      className="w-full px-4 py-3 rounded-input border-2 border-border focus:outline-none focus:ring-2 focus:ring-navy focus:ring-yellow/50 focus:border-navy resize-none font-body"
                       required
                     ></textarea>
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-ruby text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-ruby/90 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                    className="w-full bg-yellow text-black px-8 py-4 rounded-button font-semibold hover:bg-yellow-dark transition-all duration-200 hover:shadow-hover transform hover:-translate-y-1 font-body"
                   >
                     Send Message
                   </button>

@@ -19,12 +19,13 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <div className="min-h-screen flex flex-col">
-          <header className="bg-white/80 backdrop-blur-md border-b border-border/20">
-            <nav className="container mx-auto px-4 py-4">
+          <header className="bg-white border-b border-border relative overflow-hidden">
+            <nav className="container mx-auto px-4 py-4 relative z-10">
               <div className="flex items-center justify-between">
-                <Link to="/" className="flex items-center space-x-2">
-                  <h1 className="text-2xl font-display font-bold text-ruby">{companyName}</h1>
+                <Link to="/" className="flex items-center space-x-2 relative z-20">
+                  <h1 className="text-2xl font-display font-bold text-black">{companyName}</h1>
                 </Link>
+            <div className="absolute bottom-0 left-0 -translate-x-8 translate-y-1/2 w-64 h-64 bg-yellow blob-shape-1 -z-0"></div>
               </div>
             </nav>
           </header>
@@ -42,7 +43,7 @@ function App() {
             </Routes>
           </main>
 
-          <footer className="bg-ruby text-primary-foreground py-8 mt-auto">
+          <footer className="bg-black text-white/80 py-8 mt-auto">
             <div className="container mx-auto px-4 text-center">
               <p className="text-sm">
                 © {currentYear} {companyName} - {companyTagline}. All rights reserved.

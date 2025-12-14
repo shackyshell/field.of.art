@@ -30,7 +30,7 @@ export interface Tour {
 
 export const christmasTour: Tour = {
   slug: "christmas-tour",
-  image: "/src/assets/1.jpg",
+  image: "/src/assets/christmas-tour.png",
   title: "Wrocław Christmas Magic Walking Tour",
   subtitle: "Discover the enchanting Christmas atmosphere of Wrocław's historic center on foot",
   description: "Experience traditional Polish holiday crafts, explore festive markets, and savor seasonal treats while learning about Silesian Christmas traditions.",
