@@ -1,146 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Field of Art - Wrocław Tours</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles-mobile.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
-    <!-- Header -->
-    <!-- <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1>Field of Art</h1>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header> -->
-<div class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Discover Wrocław as never before</h2>
-            <p class="hero-subtitle">Explore the hidden gems and rich history of Poland's most beautiful city</p>
-            <button class="cta-button">Book Your Tour</button>
-        </div>
-        <div class="hero-image">
-            <img src="assets/1.jpg" alt="Wrocław Cityscape"/>
-        </div>
-    </section>
-
-        <!-- Services Section -->
-        <section class="services">
-            <div class="container">
-                <h2 class="section-title">Our Tours</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <h3>Historical Walking Tour</h3>
-                        <p>Explore Wrocław's 1000-year history with our expert local guides</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Food & Culture Tour</h3>
-                        <p>Taste authentic Polish cuisine and learn about local traditions</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Private Group Tours</h3>
-                        <p>Customized experiences for families, friends, and corporate groups</p>
-                    </div>
-                    <div class="service-item">
-                        <h3>Photography Tours</h3>
-                        <p>Capture the most Instagram-worthy spots in Wrocław</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    <!-- Features Section -->
-    <!-- <section class="features">
-        <div class="container">
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🍺</div>
-                    <h3>Beer Tasting Tour</h3>
-                    <p>Discover Wrocław's rich brewing tradition with local craft beers and traditional Polish cuisine</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⛲</div>
-                    <h3>Fountains Tour</h3>
-                    <p>Experience the magical Multimedia Fountain and discover the city's most beautiful water features</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👻</div>
-                    <h3>Scary Wrocław Tour</h3>
-                    <p>Explore the dark side of Wrocław with ghost stories, legends, and mysterious places</p>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- About Section -->
-    <section class="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="assets/2.jpg" alt="Wrocław Old Town"/>
-                </div>
-                <div class="about-text">
-                    <h2>About Our Tours</h2>
-                    <p>We are passionate about sharing the hidden stories and unique experiences that make Wrocław special. Our local guides combine historical knowledge with insider tips to deliver unforgettable adventures.</p>
-                    <p>From traditional beer tastings to mysterious ghost walks, we offer authentic experiences that show you the real Wrocław beyond the tourist trails.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-    <!-- Footer -->
-    <footer class="footer">
-        <!-- <div class="container"> -->
-            <!-- <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Wrocław Tours</h3>
-                    <p>Discover the magic of Wrocław with our expert local guides</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#tours">Tours</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link">Facebook</a>
-                        <a href="#" class="social-link">Instagram</a>
-                        <a href="#" class="social-link">TripAdvisor</a>
-                    </div>
-                </div>
-            </div> -->
-            <div class="footer-bottom">
-                <p>&copy; <span id="year"></span> Field of Art - Wrocław Tours. All rights reserved.</p>
-            </div>
-        <!-- </div> -->
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-
-<script>
-document.getElementById("year").innerHTML = new Date().getFullYear();
-</script>
