@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vite.dev/config/
 export default defineConfig({
-  "base": "/field.of.art/",
+  "base": "./",
   plugins: [
     react({
       babel: {
