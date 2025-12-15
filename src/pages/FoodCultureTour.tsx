@@ -6,13 +6,13 @@ const FoodCultureTour = () => {
   return (
     <main className="min-h-screen bg-background">
       <section className="relative py-16 md:py-24 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
+        {/* <div className="absolute inset-0 opacity-20">
           <div className="absolute top-10 left-20 w-48 h-48 bg-yellow blob-shape-1"></div>
-        </div>
+        </div> */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6 order-2 md:order-1">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="space-y-6 order-2 md:order-1 pr-6 md:pr-12">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-black">
                   {foodCultureTour.title}
                 </h1>
@@ -69,8 +69,8 @@ const FoodCultureTour = () => {
                   return <CheckCircle2 className="w-5 h-5" />;
                 };
                 return (
-                  <div key={index} className="flex items-start gap-3 p-4 rounded-lg bg-cream/50 hover:bg-cream transition-colors">
-                    <div className="text-yellow flex-shrink-0 mt-0.5">
+                  <div key={index} className="flex items-start gap-3 p-4 rounded-lg ">
+                    <div className="text-navy flex-shrink-0 mt-0.5">
                       {getIcon(item)}
                     </div>
                     <p className="text-foreground font-body">{item}</p>

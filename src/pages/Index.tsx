@@ -6,10 +6,10 @@ import image2 from "@/assets/2.jpg";
 const Index = () => {
   const featuredTours = [
     allTours.find(t => t.slug === "christmas-tour"),
-    allTours.find(t => t.slug === "historical-tour"),
-    allTours.find(t => t.slug === "food-culture-tour"),
-    allTours.find(t => t.slug === "private-group-tour"),
-    allTours.find(t => t.slug === "photography-tour"),
+    // allTours.find(t => t.slug === "historical-tour"),
+    // allTours.find(t => t.slug === "food-culture-tour"),
+    // allTours.find(t => t.slug === "private-group-tour"),
+    // allTours.find(t => t.slug === "photography-tour"),
   ].filter((tour): tour is typeof allTours[0] => tour !== undefined);
   return (
     <main className="min-h-screen bg-background">
@@ -20,8 +20,8 @@ const Index = () => {
           {/* <div className="absolute bottom-20 right-10 w-48 h-48 bg-yellow blob-shape-2"></div> */}
         </div>
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+          <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-6 pr-6 md:pr-12">
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-black leading-tight">
                 Discover <span className="text-yellow">Wrocław</span> as never before
               </h2>
@@ -55,7 +55,7 @@ const Index = () => {
           <h2 className="text-3xl md:text-4xl font-display font-bold text-center text-foreground mb-12">
             Our Tours
           </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {featuredTours.map((tour) => (
               <Link
                 key={tour.slug}

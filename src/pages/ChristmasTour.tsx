@@ -13,8 +13,8 @@ const ChristmasTour = () => {
         </div> */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div className="space-y-6 order-2 md:order-1">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+              <div className="space-y-6 order-2 md:order-1 pr-6 md:pr-12">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-black">
                   {christmasTour.title}
                 </h1>
