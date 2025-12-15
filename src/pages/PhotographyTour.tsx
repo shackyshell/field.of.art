@@ -1,6 +1,6 @@
 import { photographyTour } from "@/data/tourDescription";
 import TourPath from "@/components/TourPath";
-import { CheckCircle2, Camera, Users, MapPin, Sun, Image, Lightbulb } from "lucide-react";
+import { CheckCircle2, Camera, Users, Sun, Lightbulb } from "lucide-react";
 
 const PhotographyTour = () => {
   return (

@@ -1,6 +1,6 @@
 import { christmasTour } from "@/data/tourDescription";
 import TourPath from "@/components/TourPath";
-import { CheckCircle2, MapPin, Clock, Users, UtensilsCrossed, Gift, Camera, Shield } from "lucide-react";
+import { CheckCircle2, MapPin, Users, UtensilsCrossed, Gift, Camera, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const ChristmasTour = () => {

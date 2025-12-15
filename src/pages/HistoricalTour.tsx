@@ -1,6 +1,6 @@
 import { historicalTour } from "@/data/tourDescription";
 import TourPath from "@/components/TourPath";
-import { CheckCircle2, MapPin, Users, Camera, BookOpen, Shield } from "lucide-react";
+import { CheckCircle2, MapPin, Users, Camera, BookOpen } from "lucide-react";
 
 const HistoricalTour = () => {
   return (
