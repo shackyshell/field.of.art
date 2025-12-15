@@ -17,7 +17,7 @@ function App() {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename="/field.of.art">
         <div className="min-h-screen flex flex-col">
           <header className="bg-white border-b border-border relative overflow-hidden">
             <nav className="container mx-auto px-4 py-4 relative z-10">
