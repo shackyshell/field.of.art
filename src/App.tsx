@@ -22,10 +22,10 @@ function App() {
           <header className="bg-white border-b border-border relative overflow-hidden">
             <nav className="container mx-auto px-4 py-4 relative z-10">
               <div className="flex items-center justify-between">
-                <Link to="/" className="flex items-center space-x-2 relative z-20">
-                  <h1 className="text-2xl font-display font-bold text-black">{companyName}</h1>
+                <Link to="/" className="relative inline-block z-20">
+                  <h1 className="text-2xl font-display font-bold text-black relative z-10">{companyName}</h1>
+                  <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-yellow blob-shape-1 -z-0"></div>
                 </Link>
-            <div className="absolute bottom-0 left-0 -translate-x-8 translate-y-1/2 w-64 h-64 bg-yellow blob-shape-1 -z-0"></div>
               </div>
             </nav>
           </header>

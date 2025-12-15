@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { allTours } from "@/data/tourDescription";
+import image1 from "@/assets/1.jpg";
+import image2 from "@/assets/2.jpg";
 
 const Index = () => {
   const featuredTours = [
@@ -36,7 +38,7 @@ const Index = () => {
             <div className="relative">
               <div className="aspect-[4/3] rounded-card overflow-hidden shadow-hover relative z-10">
                 <img 
-                  src="/src/assets/1.jpg" 
+                  src={image1} 
                   alt="Wrocław Cityscape"
                   className="w-full h-full object-cover"
                 />
@@ -95,7 +97,7 @@ const Index = () => {
               <div className="relative">
               <div className="aspect-[4/3] rounded-card overflow-hidden shadow-hover relative z-10">
                 <img 
-                  src="/src/assets/2.jpg" 
+                  src={image2} 
                   alt="Wrocław Cityscape"
                   className="w-full h-full object-cover"
                 />

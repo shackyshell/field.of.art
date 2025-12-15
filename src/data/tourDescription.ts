@@ -1,3 +1,8 @@
+import image1 from "@/assets/1.jpg";
+import image2 from "@/assets/2.jpg";
+import image3 from "@/assets/3.jpg";
+import christmasImage from "@/assets/christmas-tour.png";
+
 export interface Tour {
   title: string;
   subtitle: string;
@@ -30,7 +35,7 @@ export interface Tour {
 
 export const christmasTour: Tour = {
   slug: "christmas-tour",
-  image: "/src/assets/christmas-tour.png",
+  image: christmasImage,
   title: "Wrocław Christmas Magic Walking Tour",
   subtitle: "Discover the enchanting Christmas atmosphere of Wrocław's historic center on foot",
   description: "Experience traditional Polish holiday crafts, explore festive markets, and savor seasonal treats while learning about Silesian Christmas traditions.",
@@ -126,7 +131,7 @@ export const christmasTour: Tour = {
 
 export const historicalTour: Tour = {
   slug: "historical-tour",
-  image: "/src/assets/2.jpg",
+  image: image2,
   title: "Wrocław Historical Walking Tour",
   subtitle: "Journey through 1000 years of history in Poland's most beautiful city",
   description: "Discover the rich history of Wrocław from medieval times through World War II to modern day. Walk through centuries of architecture, learn about the city's multicultural past, and hear stories of resilience and rebirth.",
@@ -194,7 +199,7 @@ export const historicalTour: Tour = {
 
 export const foodCultureTour: Tour = {
   slug: "food-culture-tour",
-  image: "/src/assets/3.jpg",
+  image: image3,
   title: "Wrocław Food & Culture Tour",
   subtitle: "Taste authentic Polish cuisine and discover local traditions",
   description: "Experience the flavors of Silesia and Polish cuisine while learning about local customs, traditions, and the cultural significance of food in Polish society. Visit traditional restaurants, local markets, and artisan producers.",
@@ -263,7 +268,7 @@ export const foodCultureTour: Tour = {
 
 export const privateGroupTour: Tour = {
   slug: "private-group-tour",
-  image: "/src/assets/1.jpg",
+  image: image1,
   title: "Private Group Tours",
   subtitle: "Customized experiences for families, friends, and corporate groups",
   description: "Create your perfect Wrocław experience with a fully customizable private tour. Whether you're a family with children, a group of friends, or a corporate team, we'll design an itinerary that matches your interests, pace, and schedule.",
@@ -332,7 +337,7 @@ export const privateGroupTour: Tour = {
 
 export const photographyTour: Tour = {
   slug: "photography-tour",
-  image: "/src/assets/2.jpg",
+  image: image2,
   title: "Wrocław Photography Tour",
   subtitle: "Capture the most Instagram-worthy spots in Wrocław",
   description: "Discover Wrocław's most photogenic locations with a photography-focused tour. Learn composition techniques, find the best lighting, and capture stunning images of architecture, street art, and hidden gems while exploring the city.",
