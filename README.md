@@ -1,3 +1,35 @@
+preparation:
+```
+npm install
+```
+
+to run:
+```
+npm run dev
+```
+
+http://localhost:5173/
+
+to build:
+```
+npm run build
+```
+to check build:
+```
+npm run preview
+```
+
+on commit to main branch - there is a job running, executing pipeline on github, to build and deploy.
+
+https://github.com/shackyshell/field.of.art/actions
+
+projectwro.pl
+
+TODO: does not work with www. for now
+
+
+
+------------------------------------------------
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
